@@ -1,3 +1,4 @@
+/* style.css */
 body {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 #particles-js {
@@ -21,8 +23,8 @@ body {
 
 .container {
     position: relative;
-    max-width: 600px;
-    width: 80%;
+    max-width: 800px;
+    width: 90%;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -47,11 +49,21 @@ body {
 }
 
 .volume-control {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-icon {
+    width: 30px;
+    height: 30px;
 }
 
 #volume-slider {
-    width: 100%;
+    width: 150px;
     appearance: none;
     background: linear-gradient(to right, #ff0000, #ff6600);
     border-radius: 5px;
